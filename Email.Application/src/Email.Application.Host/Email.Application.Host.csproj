@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.5.0" />
+      <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.5.0" />
+      <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.5.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Email.Application.Api.Contracts\Email.Application.Api.Contracts.csproj" />
+      <ProjectReference Include="..\Email.Application.AppServices\Email.Application.AppServices.csproj" />
+      <ProjectReference Include="..\Email.Application.DataAccess\Email.Application.DataAccess.csproj" />
+    </ItemGroup>
+
+</Project>
